@@ -1,4 +1,5 @@
-<header><nav class="header_menu">
+<header>
+    <nav class="header_menu">
     <ul class="lista_titulo">
       <li class="titulo"><a href="home.php">Lagard</a></li>
     </ul>
@@ -12,7 +13,7 @@
         <button id="options" class="dropdown-item" type="button"><a href="{{ route('vehicles') }}">VEHICULOS</a></button>
         <button id="options" class="dropdown-item" type="button"><a href="{{ route('aboutUs') }}">NOSOTROS</a></button>
         <button id="options" class="dropdown-item" type="button"><a href="{{ route('buy') }}">COMPRA ACA</a></button>
-        <button id="options" class="dropdown-item" type="button"><a href="{{ route('edit/user') }}">AJUSTES</a></button>
+        <button id="options" class="dropdown-item" type="button"><a href="{{ route('editUser') }}">AJUSTES</a></button>
         <button id="options" class="dropdown-item" type="button">style='display:none;'<a href="{{ route('logout') }}">CERRAR SESION</a></button>
       </div>
     </div>
@@ -24,7 +25,7 @@
       <div class="dropdown menuLogueado" style='display:none;' >
         <li class="dropbtn"  style='display:none;' >PERFIL
           <div class="dropdown-content">
-            <a href="{{ route('edit/user') }}">Configurar</a>
+            <a href="{{ route('editUser') }}">Configurar</a>
         </div>
         </li>
       </div>

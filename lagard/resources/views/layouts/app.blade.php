@@ -15,18 +15,24 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Great+Vibes&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+
 </head>
+
 <body>
+ @extends('header')
     <div id="app">
+            <main class="py-4">
+                @yield('content')
+            </main>
 
-
-        <main class="py-4">
-            @yield('content')
-        </main>
     </div>
+@extends('footer')
 </body>
 </html>

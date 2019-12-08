@@ -3,10 +3,10 @@
 ESTILOS UNICOS PARA home.php
 --------------------------------------------------------------
 */
-.home{
+#app{
     display: flex;
     flex-direction: column;
-   background-image: url("../img/backHome.jpg");
+    background-image: url("../img/backHome.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;

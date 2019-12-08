@@ -11,21 +11,21 @@
 |
 */
 
+//Home
 Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/login',  function () {
-    return view('login');
-});
-Auth::routes();
-
+})->name('home');;
 Route::get('/home', 'HomeController@index')->name('home');
 
+// login, registro, olvidó su contraseña
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
+//Rutas del header
 Route::get('/vehicles', 'VehiclesController@index')->name('vehicles');
 Route::get('/aboutUs',function () {
     return view('aboutUs');
 })->name('aboutUs');
+Route::get('/buy')->name('buy');
+Route::get('/edit/user')->name('editUser');
+//Rutas del footer
