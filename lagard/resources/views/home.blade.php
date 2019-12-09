@@ -25,7 +25,7 @@
             </div>
             <div class="home-nuestro-crecimiento">
                <div class="fondo-nuestro-crecimiento">
-                <div>
+                <div class="title-crecimiento">
                 <h2>Nuestro crecimiento en el último año</h2>
                 </div>
                 <div class="new-clients">
@@ -37,28 +37,45 @@
 
                 <div class="new-clients">
                     <div class="counter2">
-                       0
+                     0
                     </div>
-                   <h3>Nuevos clientes</h3>
+                   <h3>Clientes satisfechos</h3>
                 </div>
 
                 <div class="new-clients">
                     <div class="counter3">
                        0
                     </div>
-                    <h3>Nuevos clientes</h3>
+                    <h3>Marcas incorporadas</h3>
                 </div>
 
                 <div class="new-clients">
                     <div class="counter4">
                        0
                     </div>
-                    <h3>Nuevos clientes</h3>
+                    <h3>Miembros del staff</h3>
                 </div>
                </div>
             </div>
             <div class="home-nuestros-clientes">
-
+                    <h2>Nuestros Clientes</h2>
+                    <div class="home-nuestros-clientes">
+                        @foreach($clients as $unCliente)
+                        <div class="cliente-item">
+                            <div class="foto-cliente">
+                              <img src="{{ $unCliente->foto }}" alt="" class="img-cliente"  style="width:55px;">
+                            </div>
+                              <br>
+                            <div class="titulo-cliente" style="font-weight:bold">
+                              {{ $unCliente->nombre }}
+                            </div>
+                              <br>
+                            <div class="descripcion-cliente">
+                              {{ $unCliente->comentario }}
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
             </div>
 </div>
 </div>
