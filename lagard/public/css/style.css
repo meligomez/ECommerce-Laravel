@@ -1040,3 +1040,63 @@ ESTILOS UNICOS PARA home.php
       background:black;
     }
   }
+ /********************************************************/
+  /****     Inicio de estilo para el home             ****/
+  /********************************************************/
+  .home-nuestros-servicios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .servicio-item{
+    margin: 15px;
+    align-items: center;
+    border:1px solid gray;
+    padding: 20px 20px;
+    border-radius: 10px;
+    max-width: 310px;
+  }
+  .home-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    padding: 0px;
+    margin: 0px;
+  }
+.servicio-item:hover  .img-servicio {
+ -webkit-transform:scale(1.3) ;
+ transform:scale(1.3) ;
+ }
+.servicio-item:hover {
+ overflow:hidden ;
+ background:rgba(228, 226, 226, 0.438);
+ color: black;
+}
+.counter{
+    font-weight: bold;
+}
+.home-nuestro-crecimiento{
+    width: 100%;
+    background-image: url("../img/laptop.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.fondo-nuestro-crecimiento{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(8, 8, 66,0.7);
+    height: 100%;
+    width: 100%;
+}
+.new-clients{
+    font-size: 20px;
+    margin: 20px 20px;
+    padding: 30px 30px;
+}
+ /********************************************************/
+  /****        Fin de diseño para el home            ****/
+  /********************************************************/

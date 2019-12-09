@@ -46,7 +46,7 @@ class SeederHomeServicios extends Seeder
           //Creación del cliente Bill gates
         DB::table("home_services")->insert(
             [
-            "foto" => "/img/client-billGates",
+            "foto" => "/img/servicio-gestoria.svg",
             "titulo"=>"Gestoría propia",
             "descripcion"=>"Manejamos los mejores precios para que puedas elegir el vehículo que más te guste.",
             "estado"=>True
