@@ -1,11 +1,11 @@
-function count1(clase,valor){
+function count(clase,valor){
     var counter = { var: 0 };
     TweenMax.to(counter, 3, {
       var: valor,
       onUpdate: function () {
         var number = Math.ceil(counter.var);
         $(clase).html(number);
-        if(number === counter.var){ count.kill(); }
+        // if(number === counter.var){ counter.kill(); }
       },
       onComplete: function(){
         count();
@@ -14,7 +14,6 @@ function count1(clase,valor){
     });
   }
 
-  count1('.counter1',340);
-  count1('.counter2',1500);
-  count1('.counter3',50);
-  count1('.counter4',560);
+  count('.counter2',1500);
+  count('.counter3',50);
+  count('.counter4',560);

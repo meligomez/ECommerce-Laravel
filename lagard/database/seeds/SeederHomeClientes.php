@@ -14,7 +14,7 @@ class SeederHomeClientes extends Seeder
         //Creación del cliente espasa
         DB::table("home_clients")->insert(
             [
-            "foto" => "/img/client-espasa",
+            "foto" => "/img/client-espasa.jpg",
             "nombre"=>"Consesionaria Espasa",
             "comentario"=>"Lagard es un proveedor muy confiable,somos compradores desde hace 50 años y seguimos confiando en su calidad.",
             "estado"=>True
@@ -22,7 +22,7 @@ class SeederHomeClientes extends Seeder
         //Creación del cliente Bill gates
         DB::table("home_clients")->insert(
             [
-            "foto" => "/img/client-billGates",
+            "foto" => "/img/client-billGates.jpg",
             "nombre"=>"Bill Gates",
             "comentario"=>"Lagard es uno de los mejores concesionarios que pude conocer, siempre que renuevo mi vehículo confio en que ellos tienen la experiencia perfecta para mi decisión.",
             "estado"=>True

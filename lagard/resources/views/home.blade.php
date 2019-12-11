@@ -28,8 +28,8 @@
                 <div class="title-crecimiento">
                 <h2>Nuestro crecimiento en el último año</h2>
                 </div>
-                <div class="new-clients">
-                    <div class="counter1">
+                <div class="new-clients" >
+                    <div class="counter1" onscroll="count('.counter1',340)">
                     0
                     </div>
                     <h3>Nuevos clientes</h3>
