@@ -12,9 +12,7 @@
 */
 
 //Home
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');;
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 
 // login, registro, olvidó su contraseña
@@ -22,7 +20,7 @@ Auth::routes();
 
 
 //Rutas del header
-Route::get('/vehicles', 'VehiclesController@index')->name('vehicles');
+Route::get('/vehicles', 'ProductController@index')->name('vehicles');
 Route::get('/aboutUs',function () {
     return view('aboutUs');
 })->name('aboutUs');

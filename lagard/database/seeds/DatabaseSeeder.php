@@ -12,7 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         //Para crear un seeder debo ejecutar php artisan make:seeder nombreDelSeeder
-        $this->call(SeederHomeClientes::class);
-        $this->call(SeederHomeServicios::class);
+        // $this->call(SeederHomeClientes::class);
+        // $this->call(SeederProductos::class);
+        $this->call(SeederHomeServices::class);
+
     }
 }

@@ -29,17 +29,22 @@
                             <span style="color:red;font-size:12px;"></span>
                             <span style="color:red;font-size:12px;"></span>
                             <div class="col-12 rememberMe">
-                            <label class="labelrememberMe"><input type="checkbox" name="cbox1" id="cbox1" {{ old('cbox1') ? 'checked' : '' }}>Recordarme</label>
+                            {{-- <label class="labelrememberMe"><input type="checkbox" name="cbox1" id="cbox1" {{ old('cbox1') ? 'checked' : '' }}>Recordarme</label> --}}
+                            <input class="labelrememberMe" type="checkbox" name="cbox1" id="cbox1" {{ old('remember') ? 'checked' : '' }}>
+
+                            <label class="labelrememberMe" for="remember">
+                                {{ __('Remember Me') }}
+                            </label>
                         </div>
                              <input class="login" type="submit" name="" value="LOGIN">
                         <div class="forgotPsw">
-                            <a href="#" class="col-8">¿Te olvidaste la contraseña?</a>
+                            <a href="{{ route('password.request') }}" class="col-8">¿Te olvidaste la contraseña?</a>
                         </div>
                     </form>
 
                 </div>
                 <div class="col-12 footerLogin">
-                        ¿No tenés cuenta? <a href="registroDeUsuarios.php">  Registrarme</a>
+                        ¿No tenés cuenta? <a href="{{ route('register') }}">  Registrarme</a>
                 </div>
         </div>
 @endsection
